@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unknown Words</title>
+  <link rel="shortcut icon" href="/icon/PDF To TXT.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/words.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>Unknown words for the user: </h2>
+    </header>
+    <main>
+      <table id="words-table">
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>PDF Name</th>
+          </tr>
+        </thead>
+        <tbody id="words-tbody">
+          <!-- Words will be inserted here -->
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <input type="hidden" name="words" value='<%= words %>'>
+  <script>
+    const allWords = JSON.parse(document.querySelector("input[type='hidden']").value);
+    document.querySelector("h2").innerHTML += allWords[0].user
+  </script>
+  <script src="/js/words.js"></script>
+</body>
+
+</html>

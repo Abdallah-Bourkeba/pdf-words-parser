@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+thead,
+tbody {
+  display: block;
+  width: 100%;
+}
+
+tbody {
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+tr > * {
+  flex: 1;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
