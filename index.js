@@ -79,7 +79,11 @@ app.get("/", (req, res) => {
   res.render("./index");
 });
 
-app.post("/", upload.single("pdfFile"), async (req, res) => {
+app.get("/upload", (req, res) => {
+  res.render("./upload");
+});
+
+app.post("/upload", upload.single("pdfFile"), async (req, res) => {
   try {
     // extract the text from the pdf file
     const pdfBuffer = fs.readFileSync(req.file.path);

@@ -2,41 +2,47 @@
 <html>
 
 <head>
-  <title>PDF Upload</title>
+  <title>PDF Words Parser</title>
   <link rel="shortcut icon" href="/icon/PDF To TXT.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-  <div class="float">
-    <div id="total-words" class="count"></div>
-    <div id="known-words" class="count"></div>
-    <div id="unknown-words" class="count"></div>
-    <div id="seen-words" class="count"></div>
-  </div>
-  <div class="container">
-    <form>
-      <div class="name-input">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="userName">
-      </div>
-      <input type="file" id="file" name="pdfFile">
-      <button class="btn" type="submit">Submit</button>
-    </form>
-    <div id="all-words">
-      <a href="/words">My Words</a>
-    </div>
-    <div id="modal" style="display:none;">
-      <div id="modal-content">
-        <span id="close-modal">&times;</span>
-        <h2>Do you know this word:</h2>
-        <p id="modal-word"></p>
-        <button class="btn" id="modal-yes">Yes</button>
-        <button class="btn" id="modal-no">No</button>
-      </div>
-    </div>
-  </div>
+  <header>
+    <h1>PDF Parser</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="about-text">
+        Our PDF Parser allows you to easily extract text from PDF documents.
+        Simply upload your file, and our powerful algorithms will handle the rest.
+      </p>
+    </section>
+    <section id="features" class="section">
+      <h2>Features</h2>
+      <ul class="feature-list">
+        <li class="feature-item">Easily extract text from PDF documents</li>
+        <li class="feature-item">Remove duplicated words</li>
+        <li class="feature-item">Format the words</li>
+        <li class="feature-item">Save unknown words</li>
+      </ul>
+    </section>
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <p class="pricing-text">Our PDF Parser is free to use!</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2022 PDF Parser</p>
+  </footer>
+  <button id="start">Start Now</button>
   <script src="/js/index.js"></script>
 </body>
 

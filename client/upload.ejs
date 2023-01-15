@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PDF Upload</title>
+  <link rel="shortcut icon" href="/icon/PDF To TXT.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/upload.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="float">
+    <div id="total-words" class="count"></div>
+    <div id="known-words" class="count"></div>
+    <div id="unknown-words" class="count"></div>
+    <div id="seen-words" class="count"></div>
+  </div>
+  <div class="container">
+    <form>
+      <div class="name-input">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="userName">
+      </div>
+      <input type="file" id="file" name="pdfFile">
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    <div id="all-words">
+      <a href="/words">My Words</a>
+    </div>
+    <div id="modal" style="display:none;">
+      <div id="modal-content">
+        <span id="close-modal">&times;</span>
+        <h2>Do you know this word:</h2>
+        <p id="modal-word"></p>
+        <button class="btn" id="modal-yes">Yes</button>
+        <button class="btn" id="modal-no">No</button>
+      </div>
+    </div>
+  </div>
+  <script src="/js/upload.js"></script>
+</body>
+
+</html>
