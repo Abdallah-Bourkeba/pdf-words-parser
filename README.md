@@ -25,20 +25,4 @@ The Website built using Node.js, Express, MongoDB, and Multer.
 The website only accepts PDF files as uploads
 The file size upload limit is 5GB
 
-## Requirements
 
-- Node.js
-- MongoDB
-- npm
-
-## How to install and run
-
-1. Clone the repository
-2. Run npm install to install the dependencies
-3. Start MongoDB server
-4. Run node server.js to start the server
-5. Visit http://localhost:3000 in your browser to access the website
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
